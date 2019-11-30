@@ -12,13 +12,13 @@ module.exports = function(sequelize, DataTypes) {
         isEmail: true
       }
     },
+    uname: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+    },
     // The password cannot be null
     password: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    // adding user name field
-    username: {
       type: DataTypes.STRING,
       allowNull: false
     }
